@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Satwa Langka Ind v.1.2", "Assembly-CSharp.csproj", "{6072BA5A-1FBC-0DA3-3701-A572657A4DF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR Satwa Langka Ind v.1.2", "Assembly-CSharp-Editor.csproj", "{ED1E3E34-6F40-921E-ADD3-6591B5A58152}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6072BA5A-1FBC-0DA3-3701-A572657A4DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6072BA5A-1FBC-0DA3-3701-A572657A4DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6072BA5A-1FBC-0DA3-3701-A572657A4DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6072BA5A-1FBC-0DA3-3701-A572657A4DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1E3E34-6F40-921E-ADD3-6591B5A58152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1E3E34-6F40-921E-ADD3-6591B5A58152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1E3E34-6F40-921E-ADD3-6591B5A58152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1E3E34-6F40-921E-ADD3-6591B5A58152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

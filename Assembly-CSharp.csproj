@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{E372C451-04CC-4A5A-43C3-D19AA52C5194}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Binatang\JSDeer\Demo\Scripts\DeerCameraScript.cs" />
+     <Compile Include="Assets\Binatang\JSDeer\Demo\Scripts\DeerCharacter.cs" />
+     <Compile Include="Assets\Binatang\JSDeer\Demo\Scripts\DeerTouchPad.cs" />
+     <Compile Include="Assets\Binatang\JSDeer\Demo\Scripts\DeerUserController.cs" />
+     <Compile Include="Assets\Binatang\Komododragon\Demo\Scripts\KomodoDragonCharacter.cs" />
+     <Compile Include="Assets\Binatang\Komododragon\Demo\Scripts\KomodoDragonUserController.cs" />
+     <Compile Include="Assets\Binatang\Komododragon\Demo\Scripts\KomododragonCameraScript.cs" />
+     <Compile Include="Assets\CameraZoomPinch.cs" />
+     <Compile Include="Assets\EasyRoads3D Free\scripts\EasyRoads3DTerrainID.cs" />
+     <Compile Include="Assets\EasyRoads3D Free\scripts\MarkerScript.cs" />
+     <Compile Include="Assets\EasyRoads3D Free\scripts\RoadObjectScript.cs" />
+     <Compile Include="Assets\EasyRoads3D Free\scripts\SideObjectInit.cs" />
+     <Compile Include="Assets\EasyRoads3D Free\scripts\SurfaceScript.cs" />
+     <Compile Include="Assets\EasyRoads3D Free\scripts\sideObjectScript.cs" />
+     <Compile Include="Assets\Emerald - Animal AI\Scripts\System\AlignWaypoint.cs" />
+     <Compile Include="Assets\Emerald - Animal AI\Scripts\System\Emerald_Animal_AI.cs" />
+     <Compile Include="Assets\Emerald - Animal AI\Scripts\System\PlayerHealth.cs" />
+     <Compile Include="Assets\Emerald - Animal AI\Scripts\System\PlayerWeapon.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\BackgroundSubtractorMOG2Example\BackgroundSubtractorMOG2Example.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\CamShiftExample\CamShiftExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\ComicFilterExample\ComicFilterExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\ConnectedComponentsExample\ConnectedComponentsExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\ArUcoExample\ARUtils.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\ArUcoExample\ArUcoCreateMarkerExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\ArUcoExample\ArUcoTexture2DExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\ArUcoExample\ArUcoWebCamTextureExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\FaceRecognizerExample\FaceRecognizerExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\PlotExample\PlotExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Contrib\TrackingExample\TrackingExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\ConvexHullExample\ConvexHullExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\DetectFaceExample\DetectFaceExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\DrawingExample\DrawingExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Feature2DExample\Feature2DExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\GrabCutExample\GrabCutExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\GreenScreenExample\GreenScreenExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\HOGDescriptorExample\HOGDescriptorExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\HandPoseEstimationExample\ColorBlobDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\HandPoseEstimationExample\HandPoseEstimationExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\HoughLinesPExample\HoughLinesPExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\InpaintExample\InpaintExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\MSERExample\MSERExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\MatchShapesExample\MatchShapesExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\MatchTemplateExample\MatchTemplateExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\MultiObjectTrackingBasedOnColorExample\ColorObject.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\MultiObjectTrackingBasedOnColorExample\MultiObjectTrackingBasedOnColorExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\OpenCVForUnityExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\OpticalFlowExample\OpticalFlowExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\OptimizationWebCamTextureToMatHelper.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\PolygonFilterExample\PolygonFilterExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\SVMExample\SVMExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\SeamlessCloneExample\SeamlessCloneExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\ShowLicense.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\SimpleBlobExample\SimpleBlobExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\StereoBMExample\StereoBMExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\Texture2DToMatExample\Texture2DToMatExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\ThresholdExample\ThresholdExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\TouchController.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\VideoCaptureExample\VideoCaptureExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WebCamTextureAsyncDetectFaceExample\WebCamTextureAsyncDetectFaceExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WebCamTextureDetectCirclesExample\WebCamTextureDetectCirclesExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WebCamTextureToMatExample\WebCamTextureDetectFaceExample\WebCamTextureDetectFaceExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WebCamTextureToMatExample\WebCamTextureToMatExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WebCamTextureToMatHelper.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WebCamTextureToMatHelperExample\WebCamTextureToMatHelperExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\Examples\WrapPerspectiveExample\WrapPerspectiveExample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\DisposableObject.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\DisposableOpenCVObject.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\calib3d\Calib3d.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\calib3d\StereoBM.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\calib3d\StereoMatcher.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\calib3d\StereoSGBM.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Algorithm.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Core.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\CvException.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\CvType.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\DMatch.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\KeyPoint.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Mat.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfByte.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfDMatch.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfDouble.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfFloat.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfFloat4.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfFloat6.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfInt.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfInt4.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfKeyPoint.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfPoint.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfPoint2f.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfPoint3.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfPoint3f.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfRect.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\MatOfRect2d.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Point.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Point3.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Range.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Rect.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Rect2d.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\RotatedRect.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Scalar.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\Size.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\TermCriteria.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\core\TickMeter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\AKAZE.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\AgastFeatureDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\BFMatcher.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\BOWImgDescriptorExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\BOWKMeansTrainer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\BOWTrainer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\BRISK.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\DescriptorExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\DescriptorMatcher.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\FastFeatureDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\Feature2D.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\FeatureDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\Features2d.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\FlannBasedMatcher.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\GFTTDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\KAZE.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\MSER.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\ORB.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\features2d\Params.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\imgcodecs\Imgcodecs.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\imgproc\CLAHE.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\imgproc\Imgproc.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\imgproc\LineSegmentDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\imgproc\Moments.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\imgproc\Subdiv2D.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\ANN_MLP.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\Boost.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\DTrees.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\EM.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\KNearest.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\LogisticRegression.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\Ml.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\NormalBayesClassifier.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\RTrees.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\SVM.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\SVMSGD.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\StatModel.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\ml\TrainData.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\objdetect\BaseCascadeClassifier.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\objdetect\CascadeClassifier.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\objdetect\HOGDescriptor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\objdetect\Objdetect.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\AlignExposures.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\AlignMTB.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\CalibrateCRF.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\CalibrateDebevec.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\CalibrateRobertson.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\MergeDebevec.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\MergeExposures.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\MergeMertens.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\MergeRobertson.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\Photo.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\Tonemap.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\TonemapDrago.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\TonemapDurand.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\TonemapMantiuk.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\photo\TonemapReinhard.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\AffineTransformer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\ChiHistogramCostExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\EMDHistogramCostExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\EMDL1HistogramCostExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\HausdorffDistanceExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\HistogramCostExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\NormHistogramCostExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\Shape.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\ShapeContextDistanceExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\ShapeDistanceExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\ShapeTransformer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\shape\ThinPlateSplineShapeTransformer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\Utils.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\utils\Converters.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\BackgroundSubtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\BackgroundSubtractorKNN.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\BackgroundSubtractorMOG2.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\DenseOpticalFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\DualTVL1OpticalFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\FarnebackOpticalFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\KalmanFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\SparseOpticalFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\SparsePyrLKOpticalFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\video\Video.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\videoio\VideoCapture.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\videoio\VideoWriter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv\videoio\Videoio.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\aruco\Aruco.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\aruco\Board.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\aruco\CharucoBoard.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\aruco\DetectorParameters.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\aruco\Dictionary.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\aruco\GridBoard.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorGMG.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorMOG.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bgsegm\Bgsegm.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bioinspired\Bioinspired.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bioinspired\Retina.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bioinspired\RetinaFastToneMapping.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\bioinspired\TransientAreasSegmentationModule.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ccalib\Ccalib.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\BIF.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\BasicFaceRecognizer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\Face.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\FaceRecognizer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\LBPHFaceRecognizer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\PredictCollector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\face\StandardCollector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\fuzzy\Fuzzy.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\DISOpticalFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\GPCDetails.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\GPCPatchDescriptor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\GPCPatchSample.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\GPCTrainingSamples.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\GPCTree.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\Optflow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\OpticalFlowPCAFlow.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\PCAPrior.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\optflow\VariationalRefinement.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\HistogramPhaseUnwrapping.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\PhaseUnwrapping.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\Phase_unwrapping.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\plot\Plot.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\plot\Plot2d.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\MotionSaliency.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\MotionSaliencyBinWangApr2014.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\Objectness.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\ObjectnessBING.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\Saliency.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\StaticSaliency.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\StaticSaliencyFineGrained.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\saliency\StaticSaliencySpectralResidual.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\structured_light\GrayCodePattern.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\structured_light\SinusoidalPattern.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\structured_light\StructuredLightPattern.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\structured_light\Structured_light.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\tracking\MultiTracker.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\tracking\Tracker.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\tracking\Tracking.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\BoostDesc.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\BriefDescriptorExtractor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\DAISY.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\FREAK.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\HarrisLaplaceFeatureDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\LATCH.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\LUCID.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\MSDDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\PCTSignatures.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\PCTSignaturesSQFD.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\SIFT.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\SURF.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\StarDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\VGG.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xfeatures2d\Xfeatures2d.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\AdaptiveManifoldFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\DTFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\DisparityFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\DisparityWLSFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\EdgeAwareInterpolator.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\FastGlobalSmootherFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\FastLineDetector.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\GraphSegmentation.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\GuidedFilter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\RFFeatureGetter.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentation.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategy.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyColor.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyFill.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyMultiple.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategySize.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyTexture.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SparseMatchInterpolator.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\StructuredEdgeDetection.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelLSC.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelSEEDS.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelSLIC.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\ximgproc\Ximgproc.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xphoto\GrayworldWB.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xphoto\LearningBasedWB.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xphoto\SimpleWB.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xphoto\WhiteBalancer.cs" />
+     <Compile Include="Assets\OpenCVForUnity\org\opencv_contrib\xphoto\Xphoto.cs" />
+     <Compile Include="Assets\Player.cs" />
+     <Compile Include="Assets\Reaction AI\ReactionAISampleImplementation.cs" />
+     <Compile Include="Assets\Scripts\AnimalAI.cs" />
+     <Compile Include="Assets\Scripts\AnimatorBadak.cs" />
+     <Compile Include="Assets\Scripts\ColorBlob.cs" />
+     <Compile Include="Assets\Scripts\Deer.cs" />
+     <Compile Include="Assets\Scripts\Elephant.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneComplete.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneOnClickAR.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneOnClickInSat.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneOpenCV.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneShadow.cs" />
+     <Compile Include="Assets\Scripts\OpenCV\CamTrack.cs" />
+     <Compile Include="Assets\Scripts\OpenCV\HSVWrapper.cs" />
+     <Compile Include="Assets\Scripts\OpenCV\HandPoseEstimation.cs" />
+     <Compile Include="Assets\Scripts\OpenCV\LimitedQueue.cs" />
+     <Compile Include="Assets\Scripts\OpenCV\gesture.cs" />
+     <Compile Include="Assets\Scripts\OpenCV\gesture1.cs" />
+     <Compile Include="Assets\Scripts\Rhino.cs" />
+     <Compile Include="Assets\Scripts\TigerPlayer.cs" />
+     <Compile Include="Assets\TerrainToolkit\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\DynamicShadowsCreator.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\FlyingCamera.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\GameCamera.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\InfoToShaders.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\Joystick.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\MainGUI.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\MoveChessPiece.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\ScreenResolution.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\SetShadows.cs" />
+     <Compile Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Scripts\UnifiedShaderControl.cs" />
+     <Compile Include="Assets\UI\Falling leaves\Script\AutoDestory.cs" />
+     <Compile Include="Assets\UI\Falling leaves\Script\CameraOrbit.cs" />
+     <Compile Include="Assets\UI\Falling leaves\Script\SceneManager.cs" />
+     <Compile Include="Assets\UI\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
+     <Compile Include="Assets\UI\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
+     <Compile Include="Assets\UI\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
+     <Compile Include="Assets\UI\GE Common Assets\Scripts\GE_UIResponder.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
+     <Compile Include="Assets\UI\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+     <Compile Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\ActiveStateToggler.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\ApplicationManager.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\ChangeColor.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\DragMe.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\DragPanel.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\DropMe.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\PanelManager.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\ResizePanel.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\ScrollDetailTexture.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\ShowSliderValue.cs" />
+     <Compile Include="Assets\UI\Unity Samples UI\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\DatabaseLoadBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\DefaultSmartTerrainEventHandler.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\GLErrorHandler.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\HideExcessAreaBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\ImageTargetBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\Internal\AndroidUnityPlayer.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\Internal\ComponentFactoryStarterBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\Internal\IOSUnityPlayer.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\Internal\VuforiaBehaviourComponentFactory.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\KeepAliveBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\MarkerBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\MaskOutBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\MultiTargetBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\ObjectTargetBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\PropBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\ReconstructionBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\ReconstructionFromTargetBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\SmartTerrainTrackerBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\SurfaceBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\TextRecoBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\TurnOffBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\TurnOffWordBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\UserDefinedTargetBuildingBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\VideoBackgroundBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\VideoTextureRenderer.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\VirtualButtonBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\VuforiaBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\WebCamBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\WireframeBehaviour.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
+     <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\readme_SDK.txt" />
+     <None Include="Assets\Binatang\Asian Animal - Tiger (Full)\Models\tiger_fv_rm.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\license_3rdpartynotice.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Normal-BumpSpec.shader" />
+     <None Include="Assets\OpenCVForUnity\StreamingAssets\haarcascade_frontalface_alt.xml" />
+     <None Include="Assets\OpenCVForUnity\OpenCV_LICENSE.txt" />
+     <None Include="Assets\OpenCVForUnity\StreamingAssets\lbpcascade_frontalface.xml" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Surface.shader" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Shaders\ChessPiece.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Shaders\RoomShadows.shader" />
+     <None Include="Assets\Binatang\Rhinoceros\Rhino_readme.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Alpha-Bumped.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\info.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Surface_Alpha.shader" />
+     <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Alpha-BumpSpec.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\TerrainToolkit\com\heparo\terrain\toolkit\documentation\ReadMe2017.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Alpha-Diffuse.shader" />
+     <None Include="Assets\UI\Unity Samples UI\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D Marker.shader" />
+     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\UI\Unity Samples UI\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Shaders\ShadowMap.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Binatang\Komododragon\Readme.txt" />
+     <None Include="Assets\Binatang\Asian Animal - Tiger (Full)\Models\tiger_fv_ip.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\surfaceAlpha.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Normal-Diffuse.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\UI\Unity Samples UI\Materials\UI-Default-No-Alpha.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\ARM_EULA.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\UI\GUI Animator\GUI Animator FREE\Readme.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\Surface.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\NewSurfaceShader.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Binatang\Elephant\Elephant_readme.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\UI\GE Common Assets\Readme.txt" />
+     <None Include="Assets\EasyRoads3D Free\_Readme.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\UI\GUI Animator\GUI Animator FREE\!How to.txt" />
+     <None Include="Assets\EasyRoads3D Free\_readme 1.txt" />
+     <None Include="Assets\EasyRoads3D Free\Release Notes.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\tiusu82.xml" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\UI\Dynamic Soft Shadows Based on Local Cubemaps\Shaders\Common.cginc" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Road-Edit-Mode.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Normal-Bumped.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+     <None Include="Assets\Resources\SampleJSONPersonalityInputFile.txt" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\UI\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="EasyRoads3D">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/EasyRoads3D Free/lib/EasyRoads3D.dll</HintPath>
+ </Reference>
+ <Reference Include="RAIN">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/RAIN/RAIN.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaform">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/RAIN/RAINMetaform.dll</HintPath>
+ </Reference>
+ <Reference Include="Reaction_AI">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/Reaction AI/References/Reaction_AI.dll</HintPath>
+ </Reference>
+ <Reference Include="GETween">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/UI/GUI Animator/Common/Plugins/GETween.dll</HintPath>
+ </Reference>
+ <Reference Include="GUIAnimatorFREE">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/UI/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
+ </Reference>
+ <Reference Include="Qualcomm.Vuforia.UnityExtensions">
+ <HintPath>/Users/rnd-it-usu-02/Documents/FTM82/Satwa Langka Indonesia/AR Satwa Langka Ind v.1.3/Assets/Vuforia/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
